@@ -10,7 +10,7 @@
 - **Audio Recommendation**: A recommendation to use headphones for an optimal audio experience.
 
 ## Demo
-You can see a live demo of the project [here](#).
+You can see a live demo of the project [here](#https://glistening-travesseiro-b2fe69.netlify.app/).
 
 ## Installation
 To set up the project locally, follow these steps:
