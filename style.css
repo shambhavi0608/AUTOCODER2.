@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Styles */
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeInSection 2s forwards;
+    transition: all 1s ease;
+}
+
+/* Background images for each section */
+#scene1 {
+    background-image: url('1.webp');
+}
+
+#scene2 {
+    background-image: url('2.webp');
+}
+
+#scene3 {
+    background-image: url('3.webp');
+}
+
+#scene4 {
+    background-image: url('3.jpg');
+}
+
+#scene5 {
+    background-image: url('5.jpg');
+}
+
+/* Wrapper for content inside each section */
+.content-wrapper {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 40px 50px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    opacity: 0;
+    animation: fadeInContent 2s ease-in-out forwards;
+}
+
+/* Content text styling */
+.content {
+    opacity: 0; /* Initially hide content */
+    animation: fadeInText 1.5s ease-in-out forwards; /* Fade in effect */
+}
+
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 21st Call - Welcome</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+    <!-- Main container with a moving background -->
+    <div class="front-page-container">
+        <div class="content-wrapper">
+            <h1>The 21st Call</h1>
+            <p>By- Variant Coders
+            </p>
+            <button class="click-button" onclick="window.location.href='story.html'">Click Here to Read the Story</button>
+        </div>
+        
+        <!-- Controls at the bottom (checkboxes) -->
+        <div class="controls">
+            <label>
+                <input type="checkbox" id="autoScrollCheckbox" onclick="toggleAutoScroll()"> Auto Scroll
+            </label>
+            <label>
+                <input type="checkbox" id="soundCheckbox" onclick="toggleSound()"> Sound
+            </label>
+            <label>
+                <input type="checkbox" id="fullscreenCheckbox" onclick="toggleFullScreen()"> Full Screen
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
